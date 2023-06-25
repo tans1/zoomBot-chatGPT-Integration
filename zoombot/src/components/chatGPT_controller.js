@@ -3,7 +3,7 @@ const { Configuration, OpenAIApi } = require("openai");
 export const chatgptReaponse = async (transcript) => {
   try {
     const configuration = new Configuration({
-      apiKey: "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",
+      apiKey: "", // chatgpt API
     });
   
     delete configuration.baseOptions.headers['User-Agent'];
