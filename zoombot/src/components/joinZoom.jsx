@@ -18,8 +18,8 @@ function Meeting() {
 
     const signature = async () => {
       return await generateZoomSignature(
-        "AoAAJGHxRxmuTb1z5bH4hg",
-        "lQIwr8UDZKk19WWbjKli9uIrqZ1FnzMe",
+        "", // zoom clientID
+        "", // zoom clientSecret
         meetingNumber,
         0
       );
@@ -37,7 +37,7 @@ function Meeting() {
 
         ZoomMtg.join({
           signature: generatedSignature,
-          sdkKey: "AoAAJGHxRxmuTb1z5bH4hg",
+          sdkKey: "",// zoom clientID
           meetingNumber: meetingNumber,
           passWord: passWord,
           userName: 'ZoomBOT',
